@@ -1,13 +1,18 @@
 fx_version 'cerulean'
 game 'gta5'
+
+author 'PulsePK#3688'
+description 'FPS Booster'
+version '0.1'
+
 lua54 'yes'
 
-name 'um-fpsbooster'
-author 'uyuyorum {um}'
-description 'FiveM FPS Booster'
-version '1.2.0'
-repository 'https://github.com/alp1x/um-fpsbooster'
-
-client_scripts {
-    "lua/*.lua"
+shared_scripts {
+    '@ox_lib/init.lua'
 }
+
+client_scripts{
+    'client.lua',
+    'enum.lua'
+} 
+
