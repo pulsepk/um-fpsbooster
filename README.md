@@ -9,7 +9,7 @@ Commands: /fpscommand [type] (reset,ulow,low,medium)
 ```
 
 ```Menu
-Command: /fps
+Command: /fps for menu
 ## Fixed
 
 
@@ -19,7 +19,7 @@ ox_lib
 https://github.com/overextended/ox_lib
 
 
-## Fork
+## Fork and Credits
 + https://github.com/XenoS-ITA/xenos_fpsbooster
 
 
