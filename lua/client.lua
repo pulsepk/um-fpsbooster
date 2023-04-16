@@ -74,7 +74,7 @@ end
 
 RegisterCommand("fps", function()
     lib.registerContext({
-        id = 'some_menu',
+        id = 'fps_menu',
         title = 'FPS Booster',
         options = {
     
@@ -83,8 +83,7 @@ RegisterCommand("fps", function()
             description = 'Resets to Normal',
             icon = 'circle',
             onSelect = function()
-            choice = "reset"
-            umfpsBooster(choice)
+            umfpsBooster("reset")
             end,
           },
           {
@@ -92,8 +91,7 @@ RegisterCommand("fps", function()
             description = 'Switches FPS to Low',
             icon = 'circle',
             onSelect = function()
-            choice = "low"
-            umfpsBooster(choice)
+            umfpsBooster("low")
               end,
           },
           {
@@ -101,8 +99,7 @@ RegisterCommand("fps", function()
             description = 'Switches FPS to Ultra Low',
             icon = 'circle',
             onSelect = function()
-            choice = "ulow"
-            umfpsBooster(choice)
+            umfpsBooster("ulow")
             end,
           },
           {
@@ -110,13 +107,12 @@ RegisterCommand("fps", function()
             description = 'Switches FPS to Medium',
             icon = 'circle',
             onSelect = function()
-            choice = "medium"
-            umfpsBooster(choice)
+            umfpsBooster("medium")
             end,
           },
         }
     })
-    lib.showContext("some_menu")
+    lib.showContext("fps_menu")
 end)
 
 RegisterCommand("fpscommand", function(_,args) 
